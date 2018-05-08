@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.android.ikeaqueuelesscheckout.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:background="#E7EFEF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/loginSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="PROFILE"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black"
+                    android:textScaleX="1.2"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Log in to save your shopping"
+                    android:textColor="#999999"
+                    android:textAlignment="center"
+                    android:textScaleX="1.1"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#999999"
+                    android:text="list them and access from any"
+                    android:textAlignment="center"
+                    android:textScaleX="1.1"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="device."
+                    android:textColor="#999999"
+                    android:textAlignment="center"
+                    android:textScaleX="1.1"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/loginButtSett"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textAllCaps="true"
+                    android:text="Log in"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:background="#417BB2"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textAllCaps="true"
+                    android:text="Sign up"
+                    android:textColor="#444444"
+                    android:background="#EFEFEF"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#417BB2"
+                    android:text="Forgot password?"
+                    android:textAlignment="center"
+                    android:textScaleX="1.2"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/ikeafamily" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/sett" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="0.1"
+            android:background="#0051BA"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <ImageView
+                android:id="@+id/mainScreen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="25"
+                android:src="@drawable/butt1" />
+
+            <ImageView
+                android:id="@+id/productsScreen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="25"
+                android:src="@drawable/butt2" />
+
+            <ImageView
+                android:id="@+id/listScreen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="25"
+                android:src="@drawable/butt3" />
+
+            <ImageView
+                android:id="@+id/settingsScreen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="25"
+                android:src="@drawable/butt4in" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+</android.support.constraint.ConstraintLayout>

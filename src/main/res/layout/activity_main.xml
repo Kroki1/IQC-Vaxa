@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.android.ikeaqueuelesscheckout.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:background="#E7EFEF">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/offer"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/offers" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/offer"
+                    android:weightSum="100"
+                    android:id="@+id/searchBox">
+
+                <ImageView
+                    android:id="@+id/search"
+                    android:adjustViewBounds="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitStart"
+                    android:layout_weight="83"
+                    android:src="@drawable/search" />
+
+                <ImageView
+                    android:id="@+id/scan"
+                    android:adjustViewBounds="true"
+                    android:layout_weight="18"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitStart"
+                    android:onClick="scanCode"
+                    android:src="@drawable/scan" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/loginSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchBox"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <ImageView
+                        android:id="@+id/store"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitStart"
+                        android:layout_weight="51"
+                        android:src="@drawable/store" />
+
+                    <ImageView
+                        android:id="@+id/login"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitStart"
+                        android:layout_weight="47"
+                        android:src="@drawable/loginpart2" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/followus"
+                    android:layout_width="match_parent"
+                    android:adjustViewBounds="true"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/loginSection"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/followus" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="0.1"
+            android:background="#0051BA"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <ImageView
+                android:id="@+id/mainScreen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="25"
+                android:src="@drawable/butt1in" />
+
+            <ImageView
+                android:id="@+id/productsScreen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="25"
+                android:src="@drawable/butt2" />
+
+            <ImageView
+                android:id="@+id/listScreen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="25"
+                android:src="@drawable/butt3" />
+
+            <ImageView
+                android:id="@+id/settingsScreen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="25"
+                android:src="@drawable/butt4" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

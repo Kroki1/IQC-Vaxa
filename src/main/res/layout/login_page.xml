@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.android.ikeaqueuelesscheckout.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:text="Log in to save your shopping list and "
+            android:textAlignment="textStart"
+            android:textColor="#999999"
+            android:textScaleX="1.1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="2dp"
+            android:text="access them from any device. "
+            android:textAlignment="textStart"
+            android:textColor="#999999"
+            android:textScaleX="1.1"
+            android:textSize="16sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:textColor="#999999"
+            app:passwordToggleContentDescription="E-mail/IKEA FAMILY number"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorAccent">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="  E-mail/IKEA FAMILY number"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--        <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/email"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#999999"
+                    android:contentDescription="E-mail/IKEA FAMILY number"
+                    android:hint="  E-mail/IKEA FAMILY number"
+                    android:layout_height="wrap_content" />-->
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#999999"
+            app:passwordToggleContentDescription="Password"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorAccent">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="  Password"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--        <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/password"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:inputType="textPassword"
+                    android:textColor="#999999"
+                    android:textSize="14sp"
+                    android:contentDescription="  Password"
+                    android:layout_height="wrap_content" />-->
+
+        <Button
+            android:id="@+id/loginButtLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="24dp"
+            android:background="#417BB2"
+            android:onClick="checkLogin"
+            android:text="Log in"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="20dp"
+            android:text="Sign up  |  Forgot password?"
+            android:textAlignment="center"
+            android:textColor="#417BB2"
+            android:textScaleX="1.2"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
